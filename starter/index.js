@@ -99,3 +99,21 @@ Financial Analysis
 
 */ 
 
+var totalMonths = 0
+
+
+
+/* console.log
+
+"Financial Analysis", 
+new line,
+"Total Months": totalMonths, 
+new line,
+"Total": netTotal 
+new line, 
+"Average change": avgChange
+new line, 
+"Greatest Increase in Profits:" month ("grIncreaseP")
+"Greatest Decrease in Profits:" month ("grDecreaseP")
+
+*/ 

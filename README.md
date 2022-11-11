@@ -21,7 +21,7 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 <!-- second number average -->
 
 * The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in profits are from month to month and then find the average.
+  * You will need to !track! what the total change in profits are from month to month and then find the average.
   * (`Total/Number of months`)
   <!-- Subtract previous from the next one in line. Month to month. Difference needs to be stored in a variable as you go month to month. Then calculate the average at the end  -->
 
