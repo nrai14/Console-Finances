@@ -99,9 +99,11 @@ Financial Analysis
 
 */ 
 
-var totalMonths = 0
+var monthCount = 0
 
+var monthCount = finances.length; 
 
+console.log(monthCount)
 
 /* console.log
 
