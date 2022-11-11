@@ -86,3 +86,16 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+/*total number of months
+Financial Analysis 
+-------------------------
+1) Total number of months (basically add up the first part of each array)
+2) Find total after p/l 
+3) Track total change in profit monthly and find average 
+4) Greatest increase in p: month + amount 
+5) Greatest decrease in l: month + amount 
+6) print analysis 
+
+*/ 
+

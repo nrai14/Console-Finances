@@ -14,15 +14,20 @@ You have been given a dataset composed of arrays with two fields, Date and Profi
 
 Your task is to write JavaScript code that analyzes the records to calculate each of the following:
 
-* The total number of months included in the dataset.
+* The total number of months included in the dataset. 
+<!-- number of arrays  -->
 
 * The net total amount of Profit/Losses over the entire period.
+<!-- second number average -->
 
 * The average of the **changes** in Profit/Losses over the entire period.
   * You will need to track what the total change in profits are from month to month and then find the average.
   * (`Total/Number of months`)
+  <!-- Subtract previous from the next one in line. Month to month. Difference needs to be stored in a variable as you go month to month. Then calculate the average at the end  -->
 
 * The greatest increase in profits (date and amount) over the entire period.
+<!--  -->
+
 
 * The greatest decrease in losses (date and amount) over the entire period.
 
