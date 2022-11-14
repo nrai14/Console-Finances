@@ -90,7 +90,7 @@ var finances = [
 /*total number of months
 Financial Analysis 
 -------------------------
-1) Total number of months (basically add up the first part of each array)
+1) Total number of months (basically add up the first part of each array) Done!
 2) Find total after p/l 
 3) Track total change in profit monthly and find average 
 4) Greatest increase in p: month + amount 
@@ -99,11 +99,29 @@ Financial Analysis
 
 */ 
 
-var monthCount = 0
+// Below is total months
+var monthCount = 0;
 
 var monthCount = finances.length; 
 
-console.log(monthCount)
+
+// Below is total net amount 
+// I want to add up all the second data pieces in each array 
+// var netTotal = finances.pop()
+//gives me last entry 
+
+
+// Target every other array entry and store it with a loop
+//can we loop a pop of every integer? 
+
+// var netTotal = finances.filter()
+
+let netTotal = 0;
+
+finances.forEach(array => netTotal += array[1]);
+
+
+console.log(netTotal);
 
 /* console.log
 
