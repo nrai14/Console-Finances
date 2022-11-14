@@ -91,7 +91,7 @@ var finances = [
 Financial Analysis 
 -------------------------
 1) Total number of months (basically add up the first part of each array) Done!
-2) Find total after p/l 
+2) Find total after p/l Done!
 3) Track total change in profit monthly and find average 
 4) Greatest increase in p: month + amount 
 5) Greatest decrease in l: month + amount 
@@ -100,10 +100,13 @@ Financial Analysis
 */ 
 
 // Below is total months
+
+console.log("Financial Analysis\n-----------------");
+
 var monthCount = 0;
 
 var monthCount = finances.length; 
-
+console.log("Total Months: " + monthCount)
 
 // Below is total net amount 
 // I want to add up all the second data pieces in each array 
@@ -114,14 +117,52 @@ var monthCount = finances.length;
 // Target every other array entry and store it with a loop
 //can we loop a pop of every integer? 
 
-// var netTotal = finances.filter()
+// var netTotal = finances.filter() should i use filter?
 
+
+//final method for calculating net total 
 let netTotal = 0;
 
 finances.forEach(array => netTotal += array[1]);
 
+console.log("Total: $" + netTotal);
+// for.each assigns every element in the array to a new variable called array, each element
+// taking every second index and adding it up 
+// shallow copy in a new variable (maps and filters do this already)
+// Difference between maps, is that they have a defined return, however forEach doesn't have an exclusive return
 
-console.log(netTotal);
+
+//calculating the average of the changes in P/L (difference each month, store it and get average)
+ let substract = []
+for(var i = 0; i < finances.length; i++) {
+    const p1 = finances
+   
+    substract.push(finances[i][1] - finances[i+1][1]);
+
+
+    console.log(substract)
+}
+// for loop accessing the array to do the math over (look at finances[i][1])
+
+
+
+// Greatest increase in profits (date and amount)
+
+
+
+// Greatest decrease in losses (date and amount)
+
+
+// FINALLY HERE, NEED TO PRINT IN CONSOLE USING concatenation
+
+// console.log("'Financial Analysis"\n + netTotal');
+
+
+
+
+
+
+
 
 /* console.log
 
