@@ -121,6 +121,7 @@ console.log("Total: $" + netTotal);
 
 //calculating the average of the changes in P/L (difference each month, store it and get average)
 
+// storing the arrays into changes 
  let changes = []
 
 for(var i=0; i<finances.length-1; i++) {
@@ -146,7 +147,8 @@ console.log("Average Change: $" + average.toFixed(2))
 
 
 // Greatest increase in profits (date and amount)
-// Ideally, I should do a for loop first
+// Ideally, I should try to do a for loop first 
+// tapping into the values in the changes variable 
 
 greatestInc = (Math.max(...changes));
 
@@ -163,7 +165,9 @@ console.log("Greatest Increase in Profits: $" + greatestInc);
 
 
 // Greatest decrease in losses (date and amount)
-// Ideally, I should do a for loop first
+// Ideally, I should try to do a for loop first 
 greatestDec = (Math.min(...changes));
 
 console.log("Greatest Decrease in Profits: $" + greatestDec);
+
+// Unable to find out how to put the month next to Greatest Increase and greatest decrease unfortunately!  
