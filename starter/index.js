@@ -108,18 +108,6 @@ var monthCount = 0;
 var monthCount = finances.length; 
 console.log("Total Months: " + monthCount)
 
-// Below is total net amount 
-// I want to add up all the second data pieces in each array 
-// var netTotal = finances.pop()
-//gives me last entry 
-
-
-// Target every other array entry and store it with a loop
-//can we loop a pop of every integer? 
-
-// var netTotal = finances.filter() should i use filter?
-
-
 //final method for calculating net total 
 let netTotal = 0;
 
@@ -133,15 +121,42 @@ console.log("Total: $" + netTotal);
 
 
 //calculating the average of the changes in P/L (difference each month, store it and get average)
- let substract = []
-for(var i = 0; i < finances.length; i++) {
-    const p1 = finances
-   
-    substract.push(finances[i][1] - finances[i+1][1]);
 
 
-    console.log(substract)
+
+ let changes = []
+
+for(var i=0; i<finances.length-1; i++) {
+
+    var one = finances[i][1];
+    var two = finances[i+1][1];
+
+    monthly_Change = two-one;
+    
+    changes.push(monthly_Change);
+
 }
+
+let changesTotal = 0;
+
+    changes.forEach(array => changesTotal += array);
+
+    average = changesTotal / finances.length -1; 
+
+
+console.log("Average Change: $" + average.toFixed(2))
+    
+
+
+// }
+
+// sum = substract.reduce; 
+
+// average = sum / finances.length; 
+
+//     console.log(average);
+
+
 // for loop accessing the array to do the math over (look at finances[i][1])
 
 
@@ -152,29 +167,3 @@ for(var i = 0; i < finances.length; i++) {
 
 // Greatest decrease in losses (date and amount)
 
-
-// FINALLY HERE, NEED TO PRINT IN CONSOLE USING concatenation
-
-// console.log("'Financial Analysis"\n + netTotal');
-
-
-
-
-
-
-
-
-/* console.log
-
-"Financial Analysis", 
-new line,
-"Total Months": totalMonths, 
-new line,
-"Total": netTotal 
-new line, 
-"Average change": avgChange
-new line, 
-"Greatest Increase in Profits:" month ("grIncreaseP")
-"Greatest Decrease in Profits:" month ("grDecreaseP")
-
-*/ 
