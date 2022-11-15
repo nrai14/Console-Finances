@@ -15,8 +15,8 @@ The JavaScript code successfully analyses the records to calculate and print in 
 
 Please also see the respective links:
 
-* URL of deployed site: 
-* URL of GitHub Repo containing code: 
+* URL of deployed site: https://nrai14.github.io/Console-Finances/
+* URL of GitHub Repo containing code: https://github.com/nrai14/Console-Finances
 
 ScreenShot of console: 
 
