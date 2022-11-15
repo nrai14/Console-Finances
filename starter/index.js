@@ -119,10 +119,7 @@ console.log("Total: $" + netTotal);
 // shallow copy in a new variable (maps and filters do this already)
 // Difference between maps, is that they have a defined return, however forEach doesn't have an exclusive return
 
-
 //calculating the average of the changes in P/L (difference each month, store it and get average)
-
-
 
  let changes = []
 
@@ -141,29 +138,32 @@ let changesTotal = 0;
 
     changes.forEach(array => changesTotal += array);
 
-    average = changesTotal / finances.length -1; 
+    average = changesTotal / 85; 
 
 
 console.log("Average Change: $" + average.toFixed(2))
     
 
 
-// }
-
-// sum = substract.reduce; 
-
-// average = sum / finances.length; 
-
-//     console.log(average);
-
-
-// for loop accessing the array to do the math over (look at finances[i][1])
-
-
-
 // Greatest increase in profits (date and amount)
+// Ideally, I should do a for loop first
 
+greatestInc = (Math.max(...changes));
+
+console.log("Greatest Increase in Profits: $" + greatestInc);
+
+
+
+// let greatestIncrease = 0
+
+// for(var i=0; i<finances.length-1; i++) {
+
+// finances.forEach(array => changesTotal.maxDiff)
+// }
 
 
 // Greatest decrease in losses (date and amount)
+// Ideally, I should do a for loop first
+greatestDec = (Math.min(...changes));
 
+console.log("Greatest Decrease in Profits: $" + greatestDec);
