@@ -18,7 +18,7 @@ Please also see the respective links:
 * URL of deployed site: https://nrai14.github.io/Console-Finances/
 * URL of GitHub Repo containing code: https://github.com/nrai14/Console-Finances
 
-ScreenShot of console: 
+ScreenShot of console: https://github.com/nrai14/Console-Finances/issues/1#issue-1450002275
 
 ## License
 
